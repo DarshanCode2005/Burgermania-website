@@ -337,6 +337,72 @@ div.nav__close{
 }
 
 /*=============== RECIPE ===============*/
+.recipe{
+    overflow: hidden;
+}
+
+.recipe__container{
+    grid-template-columns: .5fr 1fr;
+    column-gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.recipe__image{
+    position: relative;
+    display: grid;
+    place-items: center; /*read about this property*/
+}
+
+.recipe__img{
+    position: absolute;
+    max-width: initial;
+    width: 200px;
+    left: -6rem;
+    filter: var(--shadow-big-img);
+}
+
+.recipe__data{
+    display: grid;
+    row-gap: 2rem;
+}
+
+.recipe__card{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.recipe__box{
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    border-radius: .75rem;
+    justify-content: center;
+}
+
+.recipe__box img{
+    width: 50px;
+    filter: var(--shadow-small-img);
+}
+
+.recipe__list{
+    font-size: var(--normal-font-size);
+    margin-bottom: .5rem;
+}
+
+.recipe__description{
+    font-size: var(--small-font-size);
+}
+
+.recipe__card:nth-child(even) .recipe__box{
+    order: 1;
+    /* nice */
+}
+
+
 
 
 /*=============== POPULAR ===============*/
