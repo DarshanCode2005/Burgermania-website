@@ -470,8 +470,37 @@ div.nav__close{
 }
 
 /*=============== DELIVERY ===============*/
+.delivery__container{
+    row-gap: 2.5rem;
+}
 
+.delivery__data{
+    position: relative;
+    text-align: center;
+}
 
+.delivery__container .section__title{
+    margin-bottom: 1rem;
+}
+
+.delivery__description{
+    margin-bottom: 2rem;
+}
+
+img.delivery__sticker{
+    width: 30px;
+    rotate: 15deg;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    opacity: .5;
+}
+
+img.delivery__img{
+    width: 320px;
+    filter: var(--shadow-big-img);
+    justify-self: center;
+}
 /*=============== CONTACT ===============*/
 
 
